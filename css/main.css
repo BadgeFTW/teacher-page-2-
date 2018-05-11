@@ -1,0 +1,245 @@
+/* Color Palette
+  White: #ffffff;
+  Black: #000000;
+  Medium Gray: #999999;
+  Light Gray: #dddddd;
+  Light blue: #99ffff;
+*/
+
+
+/*********** Begin Layout Styles ***********/
+body {
+  background-color: #2f5377;
+}
+
+div.container {
+  /*background-color: #1c561e;*/
+  margin-left: auto;
+  margin-right: auto;
+  /*max-width: 1200px; /* disable this line if you want full-width layouts */
+}
+
+header, main, footer {
+  padding: 15px;
+  margin: 15px;
+}
+
+/* phones (base layout is mobile-first) */
+header {
+  /*border: 3px solid #990000; /* disable this line once layout works */
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "logo"
+    "name";
+}
+
+main {
+  /*border: 3px solid #009900; /* disable this line once layout works */
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "pics"
+    "teachers"
+    "map";
+}
+
+footer {
+  /*border: 3px solid #000099; /* disable this line once layout works */
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "contact";
+}
+
+/* tablets and small laptops */
+@media (min-width: 600px) {
+
+  header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "logo name";
+  }
+
+  main {
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-areas:
+      "pics pics pics"
+      "map teachers teachers"
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "reviews contact";
+  }
+}
+
+/* desktops */
+@media (min-width: 900px) {
+  header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "logo name";
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "pics pics pics"
+      "map map teachers"
+  }
+
+  footer {
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas:
+    "reviews reviews contact"
+    }
+}
+
+div {
+  /*border: 1px solid #999999; /* disable this line once layout works */
+  /*text-align: center; /* disable this line once layout works */
+}
+
+main div {
+    /*min-height: 80px; /* disable this line once layout works */
+}
+
+div#logo {
+
+  grid-area: logo;
+}
+
+div#name {
+  grid-area: name;
+}
+
+div#pics {
+  grid-area: pics;
+}
+
+div#map {
+
+  grid-area: map;
+}
+
+div#menu {
+
+  grid-area: menu;
+}
+
+div#reviews {
+  grid-area: reviews;
+}
+
+div#contact {
+  grid-area: contact;
+}
+
+/*********** End Layout Styles ***********/
+
+
+/*********** Begin Content Styles ***********/
+
+/* Headings */
+h1 {
+ color: white;
+}
+
+h2 {
+ color: white;
+}
+
+h3 {
+ color: white;
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+/* Paragraphs and lists */
+
+p {
+ color: white;
+}
+
+ol {
+
+}
+
+ul {
+ color: white;
+}
+
+li {
+  color: white;
+}
+
+/* tables */
+
+table {
+
+}
+
+caption {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+
+
+/* images */
+img {
+
+}
+
+/* links */
+
+a:link {
+color: white
+}
+
+a:visited {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
+/* forms */
+
+
+
+/*********** End Content Styles ***********/
